@@ -118,6 +118,7 @@ module.exports = {
       },
       purple: {
         100: '#faf5ff',
+        150: '#f7efff',
         200: '#e9d8fd',
         300: '#d6bcfa',
         400: '#b794f4',
@@ -143,11 +144,13 @@ module.exports = {
       px: '1px',
       '0': '0',
       '1': '0.25rem',
+      '1.5': '0.35rem',
       '2': '0.5rem',
       '3': '0.75rem',
       '4': '1rem',
       '5': '1.25rem',
       '6': '1.5rem',
+      '7': '1.75rem',
       '8': '2rem',
       '10': '2.5rem',
       '12': '3rem',
@@ -159,6 +162,7 @@ module.exports = {
       '48': '12rem',
       '56': '14rem',
       '64': '16rem',
+      '72': '18rem'
     },
     backgroundColor: theme => theme('colors'),
     backgroundImage: {
