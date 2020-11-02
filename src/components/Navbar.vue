@@ -250,7 +250,7 @@
           <!-- navigation ends here -->
 
           <!-- upgrade to pro button start -->
-          <div class="px-8 mt-16 pb-8 text-center">
+          <div class="px-8 mt-12 pb-4 text-center">
             <div class="bg-purple-150 px-4 pt-6 pb-6 rounded-3xl">
               <div>
                 <p class="text-xs text-gray-700 font-medium">
@@ -473,7 +473,7 @@
           <!-- navigation ends here -->
 
           <!-- upgrade to pro button start -->
-          <div class="px-8 mt-16 pb-8 text-center">
+          <div class="px-8 mt-12 pb-4 text-center">
             <div class="bg-purple-150 px-4 pt-6 pb-6 rounded-3xl">
               <div>
                 <p class="text-xs text-gray-700 font-medium">
