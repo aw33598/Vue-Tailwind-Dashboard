@@ -33,7 +33,7 @@ body {
   overflow: hidden;
 }
 #app {
-  font-family: "Inter", sans-serif;
+  font-family: "Raleway", sans-serif;
   @apply antialiased;
 }
 </style>

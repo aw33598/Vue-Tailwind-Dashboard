@@ -2,10 +2,11 @@
   <div>
     <!-- mobile navbar starts here -->
     <div
-      class="w-full bg-purple-500 shadow px-4 h-12 flex items-center transform lg:hidden"
+      class="w-full bg-white shadow-sm px-4 h-12 flex items-center justify-end transform lg:-translate-y-full translate-y-0 transition ease-in-out duration-500 sm:duration-700 lg:hidden"
     >
       <div
-        class="transition-colors duration-300 ease-in rounded-md p-1 bg-purple-150 hover:bg-white cursor-pointer text-purple-500 hover:text-purple-700"
+        class="flex items-center justify-center transition-colors duration-300 ease-in rounded-full p-1.5 bg-purple-150 hover:bg-purple-500 cursor-pointer text-gray-700 hover:text-white"
+        v-if="!sideBarOpen"
         @click="sideBarOpen = true"
       >
         <svg
@@ -23,18 +24,11 @@
           ></path>
         </svg>
       </div>
-    </div>
-    <!-- mobile navbar ends here -->
 
-    <!-- side bar that will be toggled on screens beneath lg starts here -->
-    <div
-      class="w-64 shadow-md h-screen bg-white overflow-y-scroll navbar lg:hidden absolute top-0 transform transition ease-in-out duration-500 sm:duration-700"
-      :class="sideBarOpen ? 'translate-x-0' : '-translate-x-full'"
-    >
       <!-- menu close button starts -->
       <div
-        class="absolute right-0 flex items-center justify-center transition-colors duration-300 ease-in p-1.5 bg-purple-150 hover:bg-purple-500 cursor-pointer text-gray-700 hover:text-white lg:translate-x-0"
-        :class="sideBarOpen ? 'translate-x-0' : '-translate-x-full'"
+        v-else
+        class="flex items-center justify-center transition-colors duration-300 ease-in p-1.5 rounded-full bg-purple-150 hover:bg-purple-500 cursor-pointer text-gray-700 hover:text-white lg:translate-x-0"
         @click="sideBarOpen = false"
       >
         <svg
@@ -53,10 +47,17 @@
         </svg>
       </div>
       <!-- menu close button ends -->
+    </div>
+    <!-- mobile navbar ends here -->
 
+    <!-- side bar that will be toggled on screens beneath lg starts here -->
+    <div
+      class="w-64 shadow-sm h-screen bg-white overflow-y-scroll navbar lg:hidden absolute top-0 transform transition ease-in-out duration-500 sm:duration-700"
+      :class="sideBarOpen ? 'translate-x-0' : '-translate-x-full'"
+    >
       <div class="flex flex-col h-full pt-8">
         <!-- logo starts -->
-        <div class="flex items-center space-x-4 px-6" id="logo">
+        <div class="flex items-center space-x-4 px-7" id="logo">
           <div class="flex items-center space-x-1">
             <span
               class="inline-block rounded-full bg-blue-300 h-6 w-1.5"
@@ -65,25 +66,25 @@
               class="inline-block rounded-full bg-purple-400 h-4 w-1.5"
             ></span>
           </div>
-          <div class="font-semibold text-lg text-purple-400 tracking-tight">
+          <div class="font-semibold text-lg text-purple-400">
             <p>Tasking.io</p>
           </div>
         </div>
         <!-- logo ends -->
 
         <!-- new sprint starts -->
-        <div class="px-6">
+        <div class="px-7">
           <div
-            class="flex items-center justify-between rounded-2xl px-4 py-4 bg-purple-150 shadow-sm mt-12"
+            class="flex items-center justify-between rounded-2xl px-4 py-4 bg-purple-150 mt-12"
           >
             <div class="text-gray-800 font-bold text-base pr-6">
               <h2>Start New Sprint</h2>
             </div>
             <button
-              class="outline-none focus:outline-none p-3 bg-purple-500 rounded-full shadow-md flex items-center text-white"
+              class="outline-none focus:outline-none p-3 bg-purple-500 hover:bg-purple-400 focus:hover:bg-purple-400 transition-colors duration-200 ease-in rounded-full flex items-center text-white shadow-lg"
             >
               <svg
-                class="w-5 h-5"
+                class="w-6 h-6"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -104,9 +105,9 @@
         <!-- navigation starts here -->
         <ul class="flex flex-col space-y-7 list-none mt-12">
           <li class="relative cursor-pointer">
-            <div class="flex items-center space-x-4 px-6 text-gray-700">
+            <div class="flex items-center space-x-4 px-7 text-gray-700">
               <svg
-                class="w-5 h-5"
+                class="w-6 h-6"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -126,9 +127,9 @@
             <div
               class="absolute l-0 h-full w-1.5 rounded-full rounded-tl-none rounded-bl-none bg-purple-400"
             ></div>
-            <div class="flex items-center space-x-4 px-6 text-purple-400">
+            <div class="flex items-center space-x-4 px-7 text-purple-400">
               <svg
-                class="w-5 h-5"
+                class="w-6 h-6"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -145,9 +146,9 @@
             </div>
           </li>
           <li class="relative cursor-pointer">
-            <div class="flex items-center space-x-4 px-6 text-gray-700">
+            <div class="flex items-center space-x-4 px-7 text-gray-700">
               <svg
-                class="w-5 h-5"
+                class="w-6 h-6"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -164,9 +165,9 @@
             </div>
           </li>
           <li class="relative cursor-pointer">
-            <div class="flex items-center space-x-4 px-6 text-gray-700">
+            <div class="flex items-center space-x-4 px-7 text-gray-700">
               <svg
-                class="w-5 h-5"
+                class="w-6 h-6"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -183,9 +184,9 @@
             </div>
           </li>
           <li class="relative cursor-pointer">
-            <div class="flex items-center space-x-4 px-6 text-gray-700">
+            <div class="flex items-center space-x-4 px-7 text-gray-700">
               <svg
-                class="w-5 h-5"
+                class="w-6 h-6"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -202,9 +203,9 @@
             </div>
           </li>
           <li class="relative cursor-pointer">
-            <div class="flex items-center space-x-4 px-6 text-gray-700">
+            <div class="flex items-center space-x-4 px-7 text-gray-700">
               <svg
-                class="w-5 h-5"
+                class="w-6 h-6"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -221,9 +222,9 @@
             </div>
           </li>
           <li class="relative cursor-pointer">
-            <div class="flex items-center space-x-4 px-6 text-gray-700">
+            <div class="flex items-center space-x-4 px-7 text-gray-700">
               <svg
-                class="w-5 h-5"
+                class="w-6 h-6"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -249,18 +250,16 @@
         <!-- navigation ends here -->
 
         <!-- upgrade to pro button start -->
-        <div class="px-8 mt-12 pb-4 text-center">
-          <div class="bg-purple-150 px-4 pt-6 pb-6 rounded-3xl">
+        <div class="px-7 mt-12 pb-4 text-center">
+          <div class="bg-purple-150 px-4 pt-6 pb-4 rounded-3xl">
             <div>
-              <p class="text-xs text-gray-700 font-medium">
+              <p class="text-sm text-gray-700 font-medium">
                 Your trial ends in
               </p>
-              <p class="text-purple-500 text-xs font-semibold mt-1.5">
-                24 days
-              </p>
+              <p class="text-purple-500 text-sm font-bold mt-1.5">24 days</p>
             </div>
             <button
-              class="outline-none focus:outline-none w-full mt-4 py-3 bg-purple-500 text-white rounded-xl text-xs font-medium"
+              class="outline-none focus:outline-none w-full mt-4 py-3 bg-purple-500 hover:bg-purple-400 focus:hover:bg-purple-400 transition-colors duration-200 ease-in text-white rounded-xl text-xs font-semibold"
             >
               Upgrade to Pro
             </button>
