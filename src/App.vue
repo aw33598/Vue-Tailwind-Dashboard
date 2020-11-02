@@ -1,6 +1,9 @@
 <template>
   <div id="app">
     <div class="max-w-7xl">
+      <MobileNav></MobileNav>
+    </div>
+    <div class="flex max-w-7xl">
       <Navbar></Navbar>
     </div>
   </div>
@@ -8,10 +11,12 @@
 
 <script>
 import Navbar from "./components/Navbar";
+import MobileNav from "./components/MobileNav";
 export default {
   name: "App",
   components: {
     Navbar,
+    MobileNav,
   },
 };
 </script>
@@ -25,6 +30,7 @@ html {
 
 body {
   @apply bg-purple-100;
+  overflow: hidden;
 }
 #app {
   font-family: "Inter", sans-serif;
