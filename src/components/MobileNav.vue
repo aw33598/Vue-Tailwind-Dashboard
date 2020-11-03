@@ -1,8 +1,8 @@
 <template>
-  <div class="tracking-wider">
+  <div class="tracking-wider lg:hidden">
     <!-- mobile navbar starts here -->
     <div
-      class="w-full bg-white shadow-sm px-4 h-12 flex items-center justify-end transform lg:-translate-y-full translate-y-0 transition ease-in-out duration-500 sm:duration-700"
+      class="fixed top-0 z-40 w-full bg-white shadow-sm px-4 h-12 flex items-center justify-end transform lg:-translate-y-full translate-y-0 transition ease-in-out duration-500 sm:duration-700"
     >
       <div
         class="flex items-center justify-center transition-colors duration-200 ease-in rounded-md p-1.5 bg-purple-150 hover:bg-purple-500 cursor-pointer text-purple-500 hover:text-white"
@@ -52,7 +52,7 @@
 
     <!-- side bar that will be toggled on screens beneath lg starts here -->
     <div
-      class="w-64 shadow-sm h-screen bg-white overflow-y-scroll navbar lg:hidden absolute top-0 transform transition ease-in-out duration-500 sm:duration-700"
+      class="w-64 z-50 shadow-sm h-screen bg-white overflow-y-scroll navbar lg:hidden fixed top-0 transform transition ease-in-out duration-500 sm:duration-700"
       :class="sideBarOpen ? 'translate-x-0' : '-translate-x-full'"
     >
       <div class="flex flex-col h-full pt-8">

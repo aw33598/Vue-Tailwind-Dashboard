@@ -1,7 +1,7 @@
 <template>
   <!-- side bar that will be shown above screens lg starts here -->
   <div
-    class="absolute top-0 transform -translate-x-full lg:translate-x-0 transition ease-in-out duration-500 sm:duration-700 tracking-wider"
+    class="fixed z-50 top-0 transform -translate-x-full lg:translate-x-0 transition ease-in-out duration-500 sm:duration-700 tracking-wider"
   >
     <div class="shadow-sm h-screen w-72 bg-white overflow-y-scroll navbar">
       <div class="flex flex-col h-full pt-8">

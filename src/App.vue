@@ -5,18 +5,21 @@
     </div>
     <div class="flex max-w-7xl">
       <Navbar></Navbar>
+      <Content class="overflow-y-scroll"></Content>
     </div>
   </div>
 </template>
 
 <script>
-import Navbar from "./components/Navbar";
 import MobileNav from "./components/MobileNav";
+import Navbar from "./components/Navbar";
+import Content from "./components/Content";
 export default {
   name: "App",
   components: {
-    Navbar,
     MobileNav,
+    Navbar,
+    Content,
   },
 };
 </script>
@@ -41,6 +44,7 @@ html {
 body {
   @apply bg-gray-100;
   overflow: hidden;
+  @apply overflow-y-scroll;
 }
 #app {
   font-family: "Product Sans", sans-serif;
