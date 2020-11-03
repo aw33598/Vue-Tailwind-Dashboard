@@ -1,11 +1,11 @@
 <template>
-  <div>
+  <div class="tracking-wider">
     <!-- mobile navbar starts here -->
     <div
-      class="w-full bg-white shadow-sm px-4 h-12 flex items-center justify-end transform lg:-translate-y-full translate-y-0 transition ease-in-out duration-500 sm:duration-700 lg:hidden"
+      class="w-full bg-white shadow-sm px-4 h-12 flex items-center justify-end transform lg:-translate-y-full translate-y-0 transition ease-in-out duration-500 sm:duration-700"
     >
       <div
-        class="flex items-center justify-center transition-colors duration-300 ease-in rounded-full p-1.5 bg-purple-150 hover:bg-purple-500 cursor-pointer text-gray-700 hover:text-white"
+        class="flex items-center justify-center transition-colors duration-200 ease-in rounded-md p-1.5 bg-purple-150 hover:bg-purple-500 cursor-pointer text-purple-500 hover:text-white"
         v-if="!sideBarOpen"
         @click="sideBarOpen = true"
       >
@@ -28,7 +28,7 @@
       <!-- menu close button starts -->
       <div
         v-else
-        class="flex items-center justify-center transition-colors duration-300 ease-in p-1.5 rounded-full bg-purple-150 hover:bg-purple-500 cursor-pointer text-gray-700 hover:text-white lg:translate-x-0"
+        class="flex items-center justify-center transition-colors duration-200 ease-in p-1.5 rounded-md bg-purple-150 hover:bg-purple-500 cursor-pointer text-purple-500 hover:text-white lg:translate-x-0"
         @click="sideBarOpen = false"
       >
         <svg
@@ -120,7 +120,7 @@
                   d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
                 ></path>
               </svg>
-              <span class="text-sm font-medium">Backlog</span>
+              <span class="text-sm">Backlog</span>
             </div>
           </li>
           <li class="relative cursor-pointer">
@@ -139,10 +139,10 @@
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   stroke-width="2"
-                  d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"
+                  d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"
                 ></path>
               </svg>
-              <span class="text-sm font-medium">Active Sprint</span>
+              <span class="text-sm">Active Sprint</span>
             </div>
           </li>
           <li class="relative cursor-pointer">
@@ -161,7 +161,7 @@
                   d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
                 ></path>
               </svg>
-              <span class="text-sm font-medium">Calendar</span>
+              <span class="text-sm">Calendar</span>
             </div>
           </li>
           <li class="relative cursor-pointer">
@@ -180,7 +180,7 @@
                   d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"
                 ></path>
               </svg>
-              <span class="text-sm font-medium">Reports</span>
+              <span class="text-sm">Reports</span>
             </div>
           </li>
           <li class="relative cursor-pointer">
@@ -199,7 +199,7 @@
                   d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
                 ></path>
               </svg>
-              <span class="text-sm font-medium">All Issues</span>
+              <span class="text-sm">All Issues</span>
             </div>
           </li>
           <li class="relative cursor-pointer">
@@ -218,7 +218,7 @@
                   d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2"
                 ></path>
               </svg>
-              <span class="text-sm font-medium">Teams</span>
+              <span class="text-sm">Teams</span>
             </div>
           </li>
           <li class="relative cursor-pointer">
@@ -243,7 +243,7 @@
                   d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
                 ></path>
               </svg>
-              <span class="text-sm font-medium">Settings</span>
+              <span class="text-sm">Settings</span>
             </div>
           </li>
         </ul>
@@ -251,12 +251,12 @@
 
         <!-- upgrade to pro button start -->
         <div class="px-7 mt-12 pb-4 text-center">
-          <div class="bg-purple-150 px-4 pt-6 pb-4 rounded-3xl">
+          <div class="bg-purple-150 px-4 pt-6 pb-5 rounded-3xl">
             <div>
-              <p class="text-sm text-gray-700 font-medium">
-                Your trial ends in
+              <p class="text-sm text-gray-700">Your trial ends in</p>
+              <p class="text-purple-500 text-sm font-semibold mt-1.5">
+                24 days
               </p>
-              <p class="text-purple-500 text-sm font-bold mt-1.5">24 days</p>
             </div>
             <button
               class="outline-none focus:outline-none w-full mt-4 py-3 bg-purple-500 hover:bg-purple-400 focus:hover:bg-purple-400 transition-colors duration-200 ease-in text-white rounded-xl text-xs font-semibold"

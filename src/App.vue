@@ -22,6 +22,16 @@ export default {
 </script>
 
 <style>
+@font-face {
+  font-family: "Product Sans";
+  src: url("../src/assets/fonts/ProductSans-Regular.woff") format("woff"),
+    url("../src/assets/fonts/ProductSans-Medium.woff") format("woff"),
+    url("../src/assets/fonts/ProductSans-Bold.woff") format("woff"),
+    url("../src/assets/fonts/ProductSans-Black.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
 html {
   text-rendering: optimizeLegibility;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -29,11 +39,11 @@ html {
 }
 
 body {
-  @apply bg-purple-100;
+  @apply bg-gray-100;
   overflow: hidden;
 }
 #app {
-  font-family: "Raleway", sans-serif;
+  font-family: "Product Sans", sans-serif;
   @apply antialiased;
 }
 </style>
