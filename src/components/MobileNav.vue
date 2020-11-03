@@ -1,5 +1,5 @@
 <template>
-  <div class="tracking-wider lg:hidden">
+  <div>
     <!-- mobile navbar starts here -->
     <div
       class="fixed top-0 z-40 w-full bg-white shadow-sm px-4 h-12 flex items-center justify-end transform lg:-translate-y-full translate-y-0 transition ease-in-out duration-500 sm:duration-700"
@@ -52,12 +52,12 @@
 
     <!-- side bar that will be toggled on screens beneath lg starts here -->
     <div
-      class="w-64 z-50 shadow-sm h-screen bg-white overflow-y-scroll navbar lg:hidden fixed top-0 transform transition ease-in-out duration-500 sm:duration-700"
+      class="w-64 z-50 shadow-sm h-screen bg-white overflow-y-auto lg:hidden fixed top-0 transform transition ease-in-out duration-500 sm:duration-700"
       :class="sideBarOpen ? 'translate-x-0' : '-translate-x-full'"
     >
       <div class="flex flex-col h-full pt-8">
         <!-- logo starts -->
-        <div class="flex items-center space-x-4 px-7" id="logo">
+        <div class="flex items-center space-x-4 px-8" id="logo">
           <div class="flex items-center space-x-1">
             <span
               class="inline-block rounded-full bg-blue-300 h-6 w-1.5"
@@ -73,7 +73,7 @@
         <!-- logo ends -->
 
         <!-- new sprint starts -->
-        <div class="px-7">
+        <div class="px-8">
           <div
             class="flex items-center justify-between rounded-2xl px-4 py-4 bg-purple-150 mt-12"
           >
@@ -105,7 +105,7 @@
         <!-- navigation starts here -->
         <ul class="flex flex-col space-y-7 list-none mt-12">
           <li class="relative cursor-pointer">
-            <div class="flex items-center space-x-4 px-7 text-gray-700">
+            <div class="flex items-center space-x-4 px-8 text-gray-700">
               <svg
                 class="w-6 h-6"
                 fill="none"
@@ -127,7 +127,7 @@
             <div
               class="absolute l-0 h-full w-1.5 rounded-full rounded-tl-none rounded-bl-none bg-purple-400"
             ></div>
-            <div class="flex items-center space-x-4 px-7 text-purple-400">
+            <div class="flex items-center space-x-4 px-8 text-purple-400">
               <svg
                 class="w-6 h-6"
                 fill="none"
@@ -146,7 +146,7 @@
             </div>
           </li>
           <li class="relative cursor-pointer">
-            <div class="flex items-center space-x-4 px-7 text-gray-700">
+            <div class="flex items-center space-x-4 px-8 text-gray-700">
               <svg
                 class="w-6 h-6"
                 fill="none"
@@ -165,7 +165,7 @@
             </div>
           </li>
           <li class="relative cursor-pointer">
-            <div class="flex items-center space-x-4 px-7 text-gray-700">
+            <div class="flex items-center space-x-4 px-8 text-gray-700">
               <svg
                 class="w-6 h-6"
                 fill="none"
@@ -184,7 +184,7 @@
             </div>
           </li>
           <li class="relative cursor-pointer">
-            <div class="flex items-center space-x-4 px-7 text-gray-700">
+            <div class="flex items-center space-x-4 px-8 text-gray-700">
               <svg
                 class="w-6 h-6"
                 fill="none"
@@ -203,7 +203,7 @@
             </div>
           </li>
           <li class="relative cursor-pointer">
-            <div class="flex items-center space-x-4 px-7 text-gray-700">
+            <div class="flex items-center space-x-4 px-8 text-gray-700">
               <svg
                 class="w-6 h-6"
                 fill="none"
@@ -222,7 +222,7 @@
             </div>
           </li>
           <li class="relative cursor-pointer">
-            <div class="flex items-center space-x-4 px-7 text-gray-700">
+            <div class="flex items-center space-x-4 px-8 text-gray-700">
               <svg
                 class="w-6 h-6"
                 fill="none"
@@ -250,7 +250,7 @@
         <!-- navigation ends here -->
 
         <!-- upgrade to pro button start -->
-        <div class="px-7 mt-12 pb-4 text-center">
+        <div class="px-8 mt-12 pb-4 text-center">
           <div class="bg-purple-150 px-4 pt-6 pb-5 rounded-3xl">
             <div>
               <p class="text-sm text-gray-700">Your trial ends in</p>

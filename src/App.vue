@@ -5,7 +5,7 @@
     </div>
     <div class="flex max-w-7xl">
       <Navbar></Navbar>
-      <Content class="overflow-y-scroll"></Content>
+      <Sprint></Sprint>
     </div>
   </div>
 </template>
@@ -13,13 +13,13 @@
 <script>
 import MobileNav from "./components/MobileNav";
 import Navbar from "./components/Navbar";
-import Content from "./components/Content";
+import Sprint from "./components/Sprint";
 export default {
   name: "App",
   components: {
     MobileNav,
     Navbar,
-    Content,
+    Sprint,
   },
 };
 </script>
@@ -39,13 +39,13 @@ html {
   text-rendering: optimizeLegibility;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   user-select: none;
+  scroll-behavior: smooth;
 }
 
 body {
-  @apply bg-gray-100;
-  overflow: hidden;
-  @apply overflow-y-scroll;
+  @apply bg-gray-150;
 }
+
 #app {
   font-family: "Product Sans", sans-serif;
   @apply antialiased;

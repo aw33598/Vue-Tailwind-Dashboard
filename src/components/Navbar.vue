@@ -1,9 +1,9 @@
 <template>
   <!-- side bar that will be shown above screens lg starts here -->
   <div
-    class="fixed z-50 top-0 transform -translate-x-full lg:translate-x-0 transition ease-in-out duration-500 sm:duration-700 tracking-wider"
+    class="fixed z-50 top-0 transform -translate-x-full lg:translate-x-0 transition ease-in-out duration-500 sm:duration-700"
   >
-    <div class="shadow-sm h-screen w-72 bg-white overflow-y-scroll navbar">
+    <div class="shadow-sm h-screen w-72 bg-white overflow-y-auto">
       <div class="flex flex-col h-full pt-8">
         <!-- logo starts -->
         <div class="flex items-center space-x-5 px-10" id="logo">
@@ -24,7 +24,7 @@
         <!-- new sprint starts -->
         <div class="px-10">
           <div
-            class="flex items-center justify-between rounded-2xl px-4 py-4 bg-purple-150 shadow-sm mt-12"
+            class="flex items-center justify-between rounded-2xl px-5 py-4 bg-purple-150 shadow-sm mt-12"
           >
             <div class="text-gray-800 font-black text-base pr-6">
               <h2>Start New Sprint</h2>
@@ -233,13 +233,4 @@ export default {
 </script>
 
 <style>
-.navbar {
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-  scroll-behavior: smooth;
-}
-
-.navbar::-webkit-scrollbar {
-  display: none;
-}
 </style>
