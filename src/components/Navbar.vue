@@ -1,12 +1,12 @@
 <template>
   <!-- side bar that will be shown above screens lg starts here -->
   <div
-    class="fixed z-50 top-0 transform -translate-x-full lg:translate-x-0 transition ease-in-out duration-500 sm:duration-700"
+    class="fixed z-40 top-0 transform -translate-x-full xl:translate-x-0 transition ease-in-out duration-500 sm:duration-700"
   >
-    <div class="shadow-sm h-screen w-72 bg-white overflow-y-auto">
+    <div class="shadow-sm h-screen w-64 bg-white overflow-y-auto">
       <div class="flex flex-col h-full pt-8">
         <!-- logo starts -->
-        <div class="flex items-center space-x-5 px-10" id="logo">
+        <div class="flex items-center space-x-5 px-8" id="logo">
           <div class="flex items-center space-x-1">
             <span
               class="inline-block rounded-full bg-blue-300 h-6 w-1.5"
@@ -22,7 +22,7 @@
         <!-- logo ends -->
 
         <!-- new sprint starts -->
-        <div class="px-10">
+        <div class="px-8">
           <div
             class="flex items-center justify-between rounded-2xl px-5 py-4 bg-purple-150 shadow-sm mt-12"
           >
@@ -54,7 +54,7 @@
         <!-- navigation starts here -->
         <ul class="flex flex-col space-y-7 list-none mt-10">
           <li class="relative cursor-pointer">
-            <div class="flex items-center space-x-5 px-10 text-gray-700">
+            <div class="flex items-center space-x-5 px-8 text-gray-700">
               <svg
                 class="w-6 h-6"
                 fill="none"
@@ -76,7 +76,7 @@
             <div
               class="absolute l-0 h-full w-1.5 rounded-full rounded-tl-none rounded-bl-none bg-purple-400"
             ></div>
-            <div class="flex items-center space-x-5 px-10 text-purple-400">
+            <div class="flex items-center space-x-5 px-8 text-purple-400">
               <svg
                 class="w-6 h-6"
                 fill="none"
@@ -95,7 +95,7 @@
             </div>
           </li>
           <li class="relative cursor-pointer">
-            <div class="flex items-center space-x-5 px-10 text-gray-700">
+            <div class="flex items-center space-x-5 px-8 text-gray-700">
               <svg
                 class="w-6 h-6"
                 fill="none"
@@ -114,7 +114,7 @@
             </div>
           </li>
           <li class="relative cursor-pointer">
-            <div class="flex items-center space-x-5 px-10 text-gray-700">
+            <div class="flex items-center space-x-5 px-8 text-gray-700">
               <svg
                 class="w-6 h-6"
                 fill="none"
@@ -133,7 +133,7 @@
             </div>
           </li>
           <li class="relative cursor-pointer">
-            <div class="flex items-center space-x-5 px-10 text-gray-700">
+            <div class="flex items-center space-x-5 px-8 text-gray-700">
               <svg
                 class="w-6 h-6"
                 fill="none"
@@ -152,7 +152,7 @@
             </div>
           </li>
           <li class="relative cursor-pointer">
-            <div class="flex items-center space-x-5 px-10 text-gray-700">
+            <div class="flex items-center space-x-5 px-8 text-gray-700">
               <svg
                 class="w-6 h-6"
                 fill="none"
@@ -171,7 +171,7 @@
             </div>
           </li>
           <li class="relative cursor-pointer">
-            <div class="flex items-center space-x-5 px-10 text-gray-700">
+            <div class="flex items-center space-x-5 px-8 text-gray-700">
               <svg
                 class="w-6 h-6"
                 fill="none"
@@ -199,7 +199,7 @@
         <!-- navigation ends here -->
 
         <!-- upgrade to pro button start -->
-        <div class="px-10 mt-10 pb-4 text-center">
+        <div class="px-8 mt-10 pb-4 text-center">
           <div class="bg-purple-150 px-4 pt-6 pb-5 rounded-3xl">
             <div>
               <p class="text-sm text-gray-700">Your trial ends in</p>

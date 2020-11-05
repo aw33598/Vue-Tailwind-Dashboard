@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex-1 min-h-screen transform translate-y-12 lg:translate-y-0 lg:ml-72 transition ease-in-out duration-500 sm:duration-700 navbar p-5 lg:p-8 overflow-y-auto"
+    class="flex-1 min-h-screen transform translate-y-12 xl:translate-y-0 xl:ml-64 transition ease-in-out duration-500 sm:duration-700 navbar px-4 lg:px-6 py-6 xl:p-10 overflow-y-auto"
   >
     <SprintHeader></SprintHeader>
     <SprintBody></SprintBody>

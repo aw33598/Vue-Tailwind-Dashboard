@@ -4,7 +4,7 @@
     <div
       class="flex flex-col space-y-2 sm:space-y-0 sm:flex-row justify-between items-start"
     >
-      <h1 class="text-gray-800 text-3xl md:text-4xl lg:text-5xl font-black">
+      <h1 class="text-gray-800 text-3xl md:text-4xl font-black">
         Weekly Sprint #4
       </h1>
       <div>
@@ -22,8 +22,8 @@
     <div
       class="mt-4 flex flex-col sm:flex-row items:start sm:justify-between sm:items-center -mr-2 sm:-mr-3 md:-mr-5 space-y-4 sm:space-y-0"
     >
-      <div class="flex items-center ml-1.5">
-        <div class="flex items-center">
+      <div class="flex items-center">
+        <div class="flex items-center ml-1.5">
           <Avatar
             v-for="user in users"
             :key="user.name"
@@ -48,7 +48,7 @@
               d="M12 6v6m0 0v6m0-6h6m-6 0H6"
             ></path>
           </svg>
-          <span class="inline-block text-xs md:text-sm">Invite People</span>
+          <span class="text-xs md:text-sm">Invite People</span>
         </button>
       </div>
 
@@ -102,16 +102,12 @@
           >
             <svg
               class="w-4 h-4 md:w-5 md:h-5"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
+              fill="currentColor"
+              viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"
+                d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"
               ></path>
             </svg>
           </button>
@@ -120,16 +116,14 @@
           >
             <svg
               class="w-4 h-4 md:w-5 md:h-5"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
+              fill="currentColor"
+              viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"
+                fill-rule="evenodd"
+                d="M2 5a2 2 0 012-2h12a2 2 0 012 2v2a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm14 1a1 1 0 11-2 0 1 1 0 012 0zM2 13a2 2 0 012-2h12a2 2 0 012 2v2a2 2 0 01-2 2H4a2 2 0 01-2-2v-2zm14 1a1 1 0 11-2 0 1 1 0 012 0z"
+                clip-rule="evenodd"
               ></path>
             </svg>
           </button>
@@ -152,11 +146,11 @@ export default {
   data() {
     return {
       users: [
-        { name: "boy", color: "bg-green-400" },
-        { name: "girl", color: "bg-purple-400" },
-        { name: "boy-1", color: "bg-red-400" },
-        { name: "girl-1", color: "bg-blue-400" },
-        { name: "boy-2", color: "bg-orange-400" },
+        { name: "boy" },
+        { name: "girl" },
+        { name: "boy-1" },
+        { name: "girl-1" },
+        { name: "boy-2" },
       ],
     };
   },

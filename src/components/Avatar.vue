@@ -1,10 +1,10 @@
 <template>
   <div
-    class="flex items-center justify-center p-1.5 border-2 border-white rounded-full -ml-1.5"
-    :class="avatar.color"
+    class="flex items-center justify-center p-1.5 border-2 border-white rounded-full -ml-2"
+    :class="avatarColor"
   >
     <img
-      class="h-4 w-4 md:h-5 md:w-5 lg:h-6 lg:w-6"
+      class="h-6 w-6 md:h-7 md:w-7"
       :src="require(`@/assets/${avatar.name}.svg`)"
       :alt="avatar.name"
     />
@@ -19,9 +19,14 @@ export default {
       type: Object,
       required: true,
     },
-    color: {
-      type: String,
-      required: true,
+  },
+  computed: {
+    avatarColor: function () {
+      if (this.avatar.name === "boy") return "bg-green-400";
+      else if (this.avatar.name === "girl") return "bg-purple-400";
+      else if (this.avatar.name === "boy-1") return "bg-red-400";
+      else if (this.avatar.name === "girl-1") return "bg-blue-400";
+      else return "bg-orange-400";
     },
   },
 };

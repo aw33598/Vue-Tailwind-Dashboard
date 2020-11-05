@@ -2,7 +2,7 @@
   <div>
     <!-- mobile navbar starts here -->
     <div
-      class="fixed top-0 z-40 w-full bg-white shadow-sm px-4 h-12 flex items-center justify-end transform lg:-translate-y-full translate-y-0 transition ease-in-out duration-500 sm:duration-700"
+      class="fixed top-0 z-40 w-full bg-white shadow-sm px-4 h-12 flex items-center justify-end transform xl:-translate-y-full translate-y-0 transition ease-in-out duration-500 sm:duration-700"
     >
       <div
         class="flex items-center justify-center transition-colors duration-200 ease-in rounded-md p-1.5 bg-purple-150 hover:bg-purple-500 cursor-pointer text-purple-500 hover:text-white"
@@ -28,7 +28,7 @@
       <!-- menu close button starts -->
       <div
         v-else
-        class="flex items-center justify-center transition-colors duration-200 ease-in p-1.5 rounded-md bg-purple-150 hover:bg-purple-500 cursor-pointer text-purple-500 hover:text-white lg:translate-x-0"
+        class="flex items-center justify-center transition-colors duration-200 ease-in p-1.5 rounded-md bg-purple-150 hover:bg-purple-500 cursor-pointer text-purple-500 hover:text-white xl:translate-x-0"
         @click="sideBarOpen = false"
       >
         <svg
@@ -52,7 +52,7 @@
 
     <!-- side bar that will be toggled on screens beneath lg starts here -->
     <div
-      class="w-64 z-50 shadow-sm h-screen bg-white overflow-y-auto lg:hidden fixed top-0 transform transition ease-in-out duration-500 sm:duration-700"
+      class="w-64 z-40 shadow-sm h-screen bg-white overflow-y-auto xl:hidden fixed top-0 transform transition ease-in-out duration-500 sm:duration-700"
       :class="sideBarOpen ? 'translate-x-0' : '-translate-x-full'"
     >
       <div class="flex flex-col h-full pt-8">
@@ -77,7 +77,7 @@
           <div
             class="flex items-center justify-between rounded-2xl px-4 py-4 bg-purple-150 mt-12"
           >
-            <div class="text-gray-800 font-bold text-base pr-6">
+            <div class="text-gray-800 font-bold text-base">
               <h2>Start New Sprint</h2>
             </div>
             <button
@@ -103,7 +103,7 @@
         <!-- new print ends here -->
 
         <!-- navigation starts here -->
-        <ul class="flex flex-col space-y-7 list-none mt-12">
+        <ul class="flex flex-col space-y-7 list-none mt-10">
           <li class="relative cursor-pointer">
             <div class="flex items-center space-x-4 px-8 text-gray-700">
               <svg

@@ -1,25 +1,42 @@
 <template>
   <div id="app">
-    <div class="max-w-7xl">
-      <MobileNav></MobileNav>
-    </div>
-    <div class="flex max-w-7xl">
-      <Navbar></Navbar>
-      <Sprint></Sprint>
-    </div>
+    <Loading v-if="isLoading"></Loading>
+    <template v-else>
+      <div class="max-w-7xl">
+        <MobileNav></MobileNav>
+      </div>
+      <div class="flex max-w-7xl">
+        <Navbar></Navbar>
+        <Sprint></Sprint>
+      </div>
+    </template>
   </div>
 </template>
 
 <script>
+import Loading from "./components/Loading";
 import MobileNav from "./components/MobileNav";
 import Navbar from "./components/Navbar";
 import Sprint from "./components/Sprint";
 export default {
   name: "App",
+  mounted() {
+    window.addEventListener("load", () => {
+      setTimeout(() => {
+        this.isLoading = false;
+      }, 0);
+    });
+  },
   components: {
     MobileNav,
     Navbar,
     Sprint,
+    Loading,
+  },
+  data() {
+    return {
+      isLoading: true,
+    };
   },
 };
 </script>
@@ -31,8 +48,6 @@ export default {
     url("../src/assets/fonts/ProductSans-Medium.woff") format("woff"),
     url("../src/assets/fonts/ProductSans-Bold.woff") format("woff"),
     url("../src/assets/fonts/ProductSans-Black.woff") format("woff");
-  font-style: normal;
-  font-weight: normal;
 }
 
 html {
@@ -44,6 +59,7 @@ html {
 
 body {
   @apply bg-gray-150;
+  @apply tracking-wider;
 }
 
 #app {
