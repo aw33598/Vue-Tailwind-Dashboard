@@ -22,9 +22,7 @@ export default {
   name: "App",
   mounted() {
     window.addEventListener("load", () => {
-      setTimeout(() => {
-        this.isLoading = false;
-      }, 250);
+      this.isLoading = false;
     });
   },
   components: {
