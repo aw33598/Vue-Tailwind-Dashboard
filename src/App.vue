@@ -21,11 +21,7 @@ import Sprint from "./components/Sprint";
 export default {
   name: "App",
   mounted() {
-    window.addEventListener("load", () => {
-      setTimeout(() => {
-        this.isLoading = false;
-      }, 0);
-    });
+    window.addEventListener("load", () => (this.isLoading = false));
   },
   components: {
     MobileNav,

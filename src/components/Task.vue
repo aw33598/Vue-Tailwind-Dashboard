@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-shrink-0">
     <div
-      class="flex flex-col self-start flex-1 bg-white rounded-2xl shadow-sm p-4 lg:p-5"
+      class="flex flex-col self-start flex-1 bg-white rounded-2xl shadow-sm p-4 lg:p-5 w-64"
     >
       <!-- task body header starts here -->
 
@@ -29,7 +29,9 @@
       <!-- task body image ends here -->
 
       <!-- task body files and comment starts here -->
-      <div class="flex items-center mt-4 text-gray-500 font-semibold space-x-5">
+      <div
+        class="flex items-center mt-4 text-gray-500 font-semibold space-x-5 md:space-x-7"
+      >
         <div class="flex items-center space-x-1 text-xs">
           <svg
             class="w-4 h-4"
