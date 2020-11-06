@@ -74,7 +74,7 @@
           ></Avatar>
         </div>
         <div
-          class="flex items-center justify-center h-8 w-8 md:h-10 md:w-10 bg-red-100 rounded-full text-xs md:text-sm font-bold text-red-500"
+          class="flex items-center justify-center h-7 w-7 md:h-9 md:w-9 bg-red-100 rounded-full text-xs md:text-sm font-bold text-red-500 leading-none"
         >
           {{ task.number }}
         </div>
