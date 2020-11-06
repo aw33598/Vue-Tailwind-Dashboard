@@ -1,18 +1,15 @@
 <template>
   <div class="flex flex-shrink-0">
     <div
-      class="flex flex-col self-start flex-1 bg-white rounded-2xl shadow-sm p-4 lg:p-5 w-64"
+      class="flex flex-col self-start flex-1 bg-white rounded-2xl shadow-sm p-4 lg:p-5 w-72 lg:w-auto"
     >
       <!-- task body header starts here -->
 
       <div class="space-y-2">
-        <div
-          class="text-xs md:text-sm font-semibold"
-          :class="taskCategoryColor"
-        >
+        <div class="text-xs md:text-sm font-black" :class="taskCategoryColor">
           {{ task.category }}
         </div>
-        <div class="text-gray-700 text-sm md:text-base font-semibold">
+        <div class="text-gray-700 text-sm md:text-base font-black">
           {{ task.name }}
         </div>
       </div>
@@ -21,7 +18,7 @@
       <!-- task body image starts here -->
       <div class="overflow-hidden" v-if="task.image">
         <img
-          class="object-cover mt-3 mb-1 h-48"
+          class="object-cover mt-3 mb-1 h-48 w-full"
           :src="require(`@/assets/${task.image}.png`)"
           alt="covid"
         />
@@ -29,9 +26,7 @@
       <!-- task body image ends here -->
 
       <!-- task body files and comment starts here -->
-      <div
-        class="flex items-center mt-4 text-gray-500 font-semibold space-x-5 md:space-x-7"
-      >
+      <div class="flex items-center mt-4 text-gray-500 space-x-5 md:space-x-7">
         <div class="flex items-center space-x-1 text-xs">
           <svg
             class="w-4 h-4"
@@ -79,7 +74,7 @@
           ></Avatar>
         </div>
         <div
-          class="flex items-center justify-center h-8 w-8 md:h-10 md:w-10 bg-red-100 rounded-full text-xs md:text-sm font-semibold text-red-500"
+          class="flex items-center justify-center h-8 w-8 md:h-10 md:w-10 bg-red-100 rounded-full text-xs md:text-sm font-bold text-red-500"
         >
           {{ task.number }}
         </div>

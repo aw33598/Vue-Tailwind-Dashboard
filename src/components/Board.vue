@@ -3,7 +3,7 @@
   <div>
     <!-- board header starts here -->
     <div class="flex items-center justify-between px-3 lg:px-4 mb-6">
-      <h2 class="text-base md:text-lg font-semibold" :class="boardNameColor">
+      <h2 class="text-base md:text-lg font-black" :class="boardNameColor">
         {{ board.name }}
       </h2>
       <svg
