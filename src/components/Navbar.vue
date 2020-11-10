@@ -26,7 +26,7 @@
           <div
             class="flex items-center justify-between rounded-2xl px-4 py-4 bg-purple-150 shadow-sm mt-12"
           >
-            <div class="text-gray-800 font-black text-base pr-6">
+            <div class="text-gray-800 font-black text-base">
               <h2>Start New Sprint</h2>
             </div>
             <button
