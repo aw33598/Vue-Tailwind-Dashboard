@@ -42,7 +42,7 @@
               d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13"
             ></path>
           </svg>
-          <span>{{ task.files.length }} files</span>
+          <span class="font-semibold">{{ task.files.length }} files</span>
         </div>
         <div class="flex items-center space-x-1 text-xs">
           <svg
@@ -59,7 +59,7 @@
               d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
             ></path>
           </svg>
-          <span>{{ task.comments.length }} comment</span>
+          <span class="font-semibold">{{ task.comments.length }} comment</span>
         </div>
       </div>
       <!-- task body files and comment ends here -->
